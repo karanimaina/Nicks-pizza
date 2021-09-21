@@ -151,10 +151,7 @@ var editPriceOnQtyChange= function(){
 }
 
 jQuery(function ($) {
-  /* ----------------------------------------------------------- */
-  /*  1. TOP SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */
-
+  
   jQuery('.mu-top-slider').slick({
     dots: true,
     infinite: true,

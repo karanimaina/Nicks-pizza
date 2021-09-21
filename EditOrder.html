@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nicks Pizza</title>
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
   <link href="assets/css/font-awesome.css" rel="stylesheet">
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
@@ -25,10 +26,12 @@
   <a class="scrollToTop" href="#">
     <i class="fa fa-angle-up"></i>
   </a>
+ 
   <header id="mu-header">
     <nav class="navbar navbar-default mu-main-navbar" role="navigation">
       <div class="container">
         <div class="navbar-header">
+        
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
             aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -36,8 +39,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
           <a class="navbar-brand" href="index.html">Nicks<span>Pizza</span></a>
-        </div>
+ </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
             <li><a href="index.html">HOME</a></li>
@@ -47,8 +51,10 @@
       </div>
     </nav>
   </header>
+ 
   <section id="mu-slider">
     <div class="mu-slider-area">
+
       <div class="mu-top-slider">
 
         <div class="mu-top-slider-single">
@@ -56,16 +62,18 @@
           <div class="mu-top-slider-content">
             <span class="mu-slider-small-title">Welcome</span>
             <h2 class="mu-slider-title">To Nicks Pizza</h2>
-            <p>Get your pizza selivered in 30 min.</p>
+            <p>.delicious and quality pizza </p>
             <a href="#mu-reservation" class="mu-readmore-btn mu-reservation-btn">Edit Order</a>
           </div>
+      >
         </div>
+       
         <div class="mu-top-slider-single">
           <img src="assets/img/slider/3.jpeg" alt="img">
           <div class="mu-top-slider-content">
             <span class="mu-slider-small-title">Delicious</span>
             <h2 class="mu-slider-title">Spicy Masalas</h2>
-            <p>Quuality pizzas at affordable prices</p>
+            <p>Order and get your pizza delivered in 30 mins</p>
             <a href="#mu-reservation" class="mu-readmore-btn mu-reservation-btn">Edit Order</a>
           </div>
         </div>
@@ -83,13 +91,13 @@
                                 <h2>Pizza Description</h2>
                                 <ul class="list-inline">
                                     <li>
-                                        <h2 id="pizzaSize"> Size-95</h2>
+                                        <h2 id="dispPizzaSize"> Size-95</h2>
                                     </li>
                                     <li>
-                                        <h2 id="pizzaCrust"> Crusts-Crispy</h2>
+                                        <h2 id="dispPizzaCrust"> Crusts-Crispy</h2>
                                     </li>
                                     <li>
-                                        <h2 id="pizzaTopping"> Toppings-bacon</h2>
+                                        <h2 id="dispPizzaTopping"> Toppings-bacon</h2>
                                     </li>
                             </div>
                         </div>
@@ -107,7 +115,7 @@
                                         </div>
                                         <div class="totals-item" id="quantity">
                                             <label>Quantity</label>
-                                            <input style="padding-right: 5px;" class="totals-value product-quantity"
+                                            <input id="editQty" style="padding-right: 5px;" class="totals-value product-quantity"
                                                 type="number" value="2" min="1">
                                         </div>
                                         <div class="totals-item totals-item-total">
@@ -116,7 +124,7 @@
                                         </div>
                                         <div class="totals-item totals-item-total">
                                             <label>Add delivery details ?</label>
-                                            <input type="checkbox" id="child" name="age" value="child">
+                                            <input type="checkbox" id="deliveryCheckbox">
                                         </div>
                                         <div style="display: flex; flex-direction: row; " class="totals-item hide"
                                             id="location">
@@ -153,10 +161,29 @@
       </div>
     </div>
   </footer>
+  <script>
+        let pizzaData= JSON.parse(window.localStorage.getItem("pizza"));
+        let _size= pizzaData.Size;
+        let _top=pizzaData.Tops;
+        let _crust=pizzaData.Crust;
+        console.log(top);
+        var element = document.getElementById("dispPizzaSize");
+        console.log(element)
+        document.getElementById("dispPizzaSize").innerText="Size - "+_size;
+        document.getElementById("dispPizzaCrust").innerText="Crusts - "+_top;
+        document.getElementById("dispPizzaTopping").innerText="Toppings - "+_crust;
+
+        let pizzaPrice= JSON.parse(window.localStorage.getItem("pizzaPrice"));
+        document.getElementById("cart-each").innerText=pizzaPrice.totalCost;
+        document.getElementById('cart-total').innerText=pizzaPrice.totalCost;
+
+
+  </script>
+
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.js"></script>
   <script type="text/javascript" src="assets/js/slick.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
+
 </html>
