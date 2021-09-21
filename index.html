@@ -7,192 +7,176 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nicks Pizza</title>
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
   <link href="assets/css/font-awesome.css" rel="stylesheet">
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">
+  <link href="assets/css/magnific-popup.css" rel="stylesheet">
+  <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
   <link href="style.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
-
 
 <body>
   <a class="scrollToTop" href="#">
     <i class="fa fa-angle-up"></i>
-    <header id="mu-header">
-      <nav class="navbar navbar-default mu-main-navbar" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-              aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-            </button>
-            <a class="navbar-brand" href="index.html">Nicks<span>Pizza</span></a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="#mu-reservation">RESERVATION</a></li>
-            </ul>
+  </a>
+  <header id="mu-header">
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Nicks<span>Pizza</span></a>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#mu-reservation">RESERVATION</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="mu-slider">
+    <div class="mu-slider-area">
+
+      <div class="mu-top-slider">
+
+        <div class="mu-top-slider-single">
+          <img src="assets/img/slider/1.jpeg" alt="img">
+
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title">Welcome</span>
+            <h2 class="mu-slider-title">To Nicks Pizza</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem accusamus non quidem,
+              deleniti optio.</p>
+            <a href="#mu-reservation" class="mu-readmore-btn mu-reservation-btn">Order now</a>
           </div>
         </div>
-      </nav>
-    </header>
-    <section id="mu-slider">
-      <div class="mu-slider-area">
-        <div class="mu-top-slider">
-          <div class="mu-top-slider-single">
-            <img src="assets/img/slider/1.jpeg" alt="img">
-            <div class="mu-top-slider-content">
-              <span class="mu-slider-small-title">Welcome</span>
-              <h2 class="mu-slider-title">To Nicks Pizza</h2>
-              <p> Get your favorite pizza delivered in 30 min</p>
-              <a href="#mu-reservation" class="mu-readmore-btn mu-reservation-btn">Order now</a>
-            </div>
-          </div>
-          <div class="mu-top-slider-single">
-            <img src="assets/img/slider/3.jpeg" alt="img">
-            <div class="mu-top-slider-content">
-              <span class="mu-slider-small-title">Delicious</span>
-              <h2 class="mu-slider-title">Spicy Pizza</h2>
-              <p>Spicy delicious and affordable pizza.</p>
-              <a href="#mu-reservation" class="mu-readmore-btn mu-reservation-btn">Order now</a>
-            </div>
+        <div class="mu-top-slider-single">
+          <img src="assets/img/slider/3.jpeg" alt="img">
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title">Delicious</span>
+            <h2 class="mu-slider-title">Spicy Masalas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem accusamus non quidem,
+              deleniti optio.</p>
+            <a href="#mu-reservation" class="mu-readmore-btn mu-reservation-btn">Order now</a>
           </div>
         </div>
       </div>
-    </section>
-    <section id="mu-reservation">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="mu-reservation-area">
-              <div class="mu-title">
-                <span class="mu-subtitle">Make An</span>
-                <h2>Order</h2>
-              </div>
-              <div class="mu-reservation-content">
-                <div class="col-md-6">
-                  <div class="mu-reservation-left">
-                    <form class="mu-reservation-form">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <select class="form-control" id="pizzaSize">
-                              <option value="0">Pizza Size ?</option>
-                              <option value="1 Person">Small</option>
-                              <option value="2 People">Medium</option>
-                              <option value="3 People">Large</option>
-                            </select>
-                          </div>
+    </div>
+  </section>
+  <section id="mu-reservation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-reservation-area">
+
+            <div class="mu-title">
+              <span class="mu-subtitle">Make An</span>
+              <h2>Order</h2>
+            </div>
+
+            <div class="mu-reservation-content">
+
+              <div class="col-md-6">
+                <div class="mu-reservation-left">
+                  <form class="mu-reservation-form">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <select class="form-control" id="pizzaSize">
+                            <option value="0">Pizza Size ?</option>
+                            <option value="1 Person">Small</option>
+                            <option value="2 People">Medium</option>
+                            <option value="3 People">Large</option>
+                          </select>
                         </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <select class="form-control" id="pizzaCrust">
-                              <option value="0">Crust ?</option>
-                              <option value="1 Person">Crispy</option>
-                              <option value="2 People">Stuffed</option>
-                              <option value="3 People">Gluten free</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <select class="form-control" id="pizzaTops">
-                              <option value="0">Toppings ?</option>
-                              <option value="1 Person">Pepperoni</option>
-                              <option value="2 People">Bacon</option>
-                              <option value="3 People">Mushrooms</option>
-                            </select>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <select class="form-control" id="pizzaTops">
-                                <option value="0">Toppings ?</option>
-                                <option value="1 Person">Pepperoni</option>
-                                <option value="2 People">Bacon</option>
-                                <option value="3 People">Mushrooms</option>
-                              </select>
-                            </div> <button type="submit" class="mu-readmore-btn mu-reservation-btn" id="placeOrderBtn"
-                            style="background-color: white;"> Place Order</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-5 col-md-offset-1">
-                    <div class="mu-reservation-right">
-                      <div class="mu-opening-hour">
-                        <h2>Opening Hours</h2>
-                        <ul class="list-unstyled">
-                          <li>
-                            <p>Monday &amp; Tuesday</p>
-                            <p>9:00 AM - 4:00 PM</p>
-                          </li>
-                          <li>
-                            <p>Wednesday &amp; Thursday</p>
-                            <p>9:00 AM - Midnight</p>
-                          </li>
-                          <li>
-                            <p>Friday &amp; Saturday</p>
-                            <p>9:00 AM - Midnight</p>
-                          </li>
-                          <li>
-                            <p>Sunday</p>
-                            <p>9:00 AM - 11:00 PM</p>
-                          </li>
-                        </ul>
                       </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <select class="form-control" id="pizzaCrust">
+                            <option value="0">Crust ?</option>
+                            <option value="1 Person">Crispy</option>
+                            <option value="2 People">Stuffed</option>
+                            <option value="3 People">Gluten free</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <select class="form-control" id="pizzaTops">
+                            <option value="0">Toppings ?</option>
+                            <option value="1 Person">Pepperoni</option>
+                            <option value="2 People">Bacon</option>
+                            <option value="3 People">Mushrooms</option>
+                          </select>
+                        </div>
+                      </div>
+                      <button type="submit" class="mu-readmore-btn mu-reservation-btn" id="placeOrderBtn"
+                        style="background-color: white;"> Place Order</button>
                     </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="col-md-5 col-md-offset-1">
+                <div class="mu-reservation-right">
+                  <div class="mu-opening-hour">
+                    <h2>Opening Hours</h2>
+                    <ul class="list-unstyled">
+                      <li>
+                        <p>Monday &amp; Tuesday</p>
+                        <p>9:00 AM - 4:00 PM</p>
+                      </li>
+                      <li>
+                        <p>Wednesday &amp; Thursday</p>
+                        <p>9:00 AM - Midnight</p>
+                      </li>
+                      <li>
+                        <p>Friday &amp; Saturday</p>
+                        <p>9:00 AM - Midnight</p>
+                      </li>
+                      <li>
+                        <p>Sunday</p>
+                        <p>9:00 AM - 11:00 PM</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer id="mu-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-footer-area">
+          </div>
         </div>
-      </section>
-    </section>
-    
-                
-                <h2>Order</h2>
-             
-                              <option value="0">Pizza Size ?</option>
-                              <option value="1 Person">Small</option>
-                              <option value="2 People">Medium</option>
-                         >
-                              <option value="0">Crust ?</option>
-                              <option value="1 Person">Crispy</option>
-                              <option value="2 People">Stuffed</option>
-                              <option value="3 People">Gluten free</option>
-                           
-                       >
-                              <option value="0"></option>Toppings ?</option>
-                              <option value="1 Person">Pepperoni</option>
-                              <option value="2 People">Bacon</option>
-                              <option value="3 People">Mushrooms</option>
-                           
-                          style="background-color: white;"> Place Order</button>
-                     
-                      <h2>Opening Hours</h2>
-                      <ul class="list-unstyled">
-                        <li>
-                          <p>Monday &amp; Tuesday</p>
-                          <p>9:00 AM - 4:00 PM</p>
-                        </li>
-                        <li>
-                          <p>Wednesday &amp; Thursday</p>
-                          <p>9:00 AM - Midnight</p>
-                        </li>
-                        <li>
-                          <p>Friday &amp; Saturday</p>
-                          <p>9:00 AM - Midnight</p>
-                        </li>
-                        <li>
-                          <p>Sunday</p>
-                          <p>9:00 AM - 11:00 PM</p>
-                       
-    </section>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
